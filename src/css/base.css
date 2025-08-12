@@ -1,24 +1,42 @@
 :root {
-  font-family: Manrope, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  /* font-family: Manrope, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 16px;
+  font-size: 16px; */
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /* color: #242424;
+  background-color: rgba(255, 255, 255, 0.87); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* For maximum compatibility */
-  -ms-text-size-adjust: 100%; /* Old IE/Edge */
+  -ms-text-size-adjust: 100%;
+  /* Old IE/Edge */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+
+  --black: #121417;
+  --green: #4dc274;
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #fff;
+
+  --font-family: "Manrope", sans-serif;
 }
 
+/* 1. Manrope Bold 204
+2. Manrope Regular 151
+3. Manrope SemiBold 74 */
+
+
 body {
+  font-family: var(--font-family);
+  font-style: normal;
+  background: var(--white);
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
@@ -29,6 +47,20 @@ body {
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
