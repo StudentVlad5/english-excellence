@@ -13,7 +13,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* For maximum compatibility */
-  -ms-text-size-adjust: 100%; /* Old IE/Edge */
+  -ms-text-size-adjust: 100%;
+  /* Old IE/Edge */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
@@ -29,6 +30,20 @@ body {
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
