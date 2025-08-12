@@ -1,0 +1,117 @@
+.hero {
+  /* блюр фон (маленька картинка, розмита) */
+  background-image: url('../img/webp/hero/hero_2.avif');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  transition: filter 0.5s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* великий фон, який накладається поверх */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-image: var(--main-bg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 1;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+}
+
+.hero.loaded::after {
+  opacity: 1;
+  filter: none;
+}
+.hero.loaded {
+  filter: none; /* прибираємо блюр базового фону */
+}
+
+.hero_title {
+  font-size: 38px;
+  line-height: 105%;
+  color: var(--white);
+  padding-top: 425px;
+  position: relative;
+  max-width: 295px;
+  z-index: 3;
+}
+.hero_title_style {
+  color: var(--light-green);
+}
+
+.hero-button {
+  position: relative;
+  z-index: 3;
+  margin-top: 40px;
+  border: transparent 1px solid;
+  width: 100%;
+}
+.hero-button p::first-letter {
+  text-transform: uppercase;
+}
+
+.icon-to-footer {
+  position: relative;
+  z-index: 3;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  align-self: flex-end;
+  margin-top: auto;
+}
+/* медіа для планшета */
+@media (min-width: 768px) {
+  .hero {
+    background-image: url('../img//webp/hero/hero_tablet_2.avif');
+    align-items: start;
+    justify-content: flex-start;
+  }
+  .hero::after {
+    background-image: var(--main-bg);
+  }
+  .hero_title {
+    padding-top: 260px;
+    padding-left: 32px;
+    font-size: 60px;
+    font-weight: 700;
+    max-width: 488px;
+  }
+  .hero-button {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 100%;
+  }
+}
+
+/* медіа для десктопа */
+@media (min-width: 1024px) {
+  .hero {
+    background-image: url('../img/webp/hero/hero_desktop_2.avif');
+  }
+  .hero::after {
+    background-image: var(--main-bg);
+  }
+  .hero_title {
+    line-height: 117%;
+    padding-top: 164px;
+    padding-left: 64px;
+    max-width: 564px;
+  }
+  .hero-button {
+    line-height: 156%;
+    margin-top: 32px;
+    margin-left: 64px;
+    width: 100%;
+  }
+}
