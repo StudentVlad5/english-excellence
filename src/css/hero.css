@@ -58,7 +58,7 @@
   border: transparent 1px solid;
   width: 100%;
 }
-.hero-button p::first-letter {
+.hero-button::first-letter {
   text-transform: uppercase;
 }
 
