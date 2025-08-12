@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap:https://studentvlad5.github.io/project-group-mds-5/sitemap.xml
