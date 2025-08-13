@@ -1,0 +1,30 @@
+/* Styles for Mobile devices */
+.button {
+  border-radius: 12px;
+  padding: 14px 87px;
+  max-width: 295px;
+  padding: 14px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--white);
+  background: var(--green);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  transition: color var(--anim);
+  text-align: center;
+}
+.button:hover,
+.button:focus {
+  background: var(--white);
+  color: var(--green);
+  transition: color var(--anim);
+}
+/* Styles for Tablet and Desktop devices */
+@media only screen and (min-width: 768px) {
+  .button {
+    max-width: 306px;
+    font-size: 18px;
+    line-height: 156%;
+  }
+}
