@@ -1,6 +1,6 @@
 .hero {
   /* блюр фон (маленька картинка, розмита) */
-  background-image: url('../img/webp/hero/hero_2.avif');
+  background-image: url('../img/avif/hero/hero_2.avif');
   background-size: cover;
   background-position: center;
   filter: blur(10px);
@@ -73,7 +73,7 @@
 /* медіа для планшета */
 @media (min-width: 768px) {
   .hero {
-    background-image: url('../img//webp/hero/hero_tablet_2.avif');
+    background-image: url('../img/avif/hero/hero_tablet_2.avif');
     align-items: start;
     justify-content: flex-start;
   }
@@ -97,7 +97,7 @@
 /* медіа для десктопа */
 @media (min-width: 1024px) {
   .hero {
-    background-image: url('../img/webp/hero/hero_desktop_2.avif');
+    background-image: url('../img/avif/hero/hero_desktop_2.avif');
   }
   .hero::after {
     background-image: var(--main-bg);
