@@ -7,7 +7,6 @@
   min-width: var(--breakpoint-mobile-min);
   max-width: var(--breakpoint-mobile-max);
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* Styles for Tablet devices */
