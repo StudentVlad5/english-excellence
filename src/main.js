@@ -1,6 +1,6 @@
-import heroMobile from '../src/img/webp/hero/hero_2.jpg';
-import heroTablet from '../src/img/webp/hero/hero_tablet_2.jpg';
-import heroDesktop from '../src/img/webp/hero/hero_desktop_2.jpg';
+import heroMobile from '../src/img/jpg/hero/hero_2.jpg';
+import heroTablet from '../src/img/jpg/hero/hero_tablet_2.jpg';
+import heroDesktop from '../src/img/jpg/hero/hero_desktop_2.jpg';
 
 document.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero');
