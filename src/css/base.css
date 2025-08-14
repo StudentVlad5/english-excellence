@@ -23,7 +23,8 @@
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #fff;
-
+  --text-color-grey: rgba(18, 20, 23, 0.5);
+  --invalid: #ee323d;
   /* Breakpoints */
   --breakpoint-mobile-min: 320px;
   --breakpoint-mobile-max: 375px;
@@ -69,4 +70,60 @@ main:has(.back-link) {
 
 html {
   scroll-behavior: smooth;
+}
+
+.section-headline {
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.section-description {
+  margin-bottom: 40px;
+  color: var(--text-color-grey);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.header-underline {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.header-underline::after {
+  position: absolute;
+  left: 52%;
+  bottom: 0;
+  display: block;
+  width: 104%;
+  height: 12px;
+  transform: translateX(-52%);
+  background-color: #bee8cc;
+  content: '';
+  border-radius: 8px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .section-headline {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+  }
+
+  .header-underline::after {
+    height: 20px;
+  }
+
+  .section-description {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
 }
