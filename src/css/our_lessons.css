@@ -1,0 +1,196 @@
+.our-lessons {
+    padding: 120px 0;
+    background-color: #ffffff;
+}
+
+.our-lessons .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.our-lessons-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    color: #121417;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.our-lessons-title .highlight {
+    position: relative;
+    isolation: isolate;
+}
+
+.our-lessons-title .highlight::after {
+    content: '';
+    position: absolute;
+    width: 148px;
+    height: 18px;
+    background-color: #BEE8CC;
+    border-radius: 8px;
+    left: 50%;
+    bottom: 2px;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.our-lessons-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+    margin: 0 auto 40px;
+    max-width: 832px;
+}
+
+.our-lessons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.our-lessons-item {
+    background-color: #ffffff;
+    border: 1px solid #4dc274;
+    border-radius: 30px;
+    padding: 40px 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.our-lessons-item.standard {
+    background: linear-gradient(180deg, #4dc274 0%, #6bd695 100%);
+    border: 1px solid #4dc274;
+}
+
+.our-lessons-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(18, 20, 23, 0.1);
+}
+
+.lesson-plan-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #121417;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.our-lessons-item.standard .lesson-plan-title {
+    color: #ffffff;
+}
+
+.lesson-plan-price {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #121417;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.our-lessons-item.standard .lesson-plan-price {
+    color: #ffffff;
+}
+
+.lesson-plan-description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(18, 20, 23, 0.5);
+    margin: 0 0 32px 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.our-lessons-item.standard .lesson-plan-description {
+    color: #ffffff;
+}
+
+.lesson-plan-button {
+    display: inline-block;
+    background-color: #4dc274;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 16px 39px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: auto;
+}
+
+.our-lessons-item.standard .lesson-plan-button {
+    background: linear-gradient(180deg, #4dc274 0%, #6bd695 100%);
+    border: 1px solid #ffffff;
+}
+
+.lesson-plan-button:hover {
+    background-color: #3ea362;
+    transform: translateY(-2px);
+}
+
+.our-lessons-item.standard .lesson-plan-button:hover {
+    background: linear-gradient(180deg, #3ea362 0%, #5a9569 100%);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1199px) {
+    .our-lessons .container {
+        max-width: 768px;
+    }
+
+    .our-lessons-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .our-lessons {
+        padding: 80px 0;
+    }
+
+    .our-lessons-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .our-lessons-text {
+        font-size: 14px;
+        margin-bottom: 48px;
+        max-width: 100%;
+    }
+
+    .our-lessons-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .our-lessons-item {
+        width: 100%;
+        max-width: 320px;
+        padding: 32px 20px;
+    }
+}
