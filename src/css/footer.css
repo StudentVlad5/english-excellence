@@ -8,16 +8,15 @@
   background-color: #121417;
 }
 
-.container {
+.footer-container {
   width: 100%;
   max-width: 1280px;
   padding: 40px 20px 20px;
 }
 
-
 /* Logo */
 .logo {
-  color: #FFF;
+  color: #fff;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
@@ -27,7 +26,7 @@
 }
 
 .accent {
-  color: #4DC274;
+  color: #4dc274;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
@@ -36,12 +35,11 @@
 }
 
 .address {
-
   margin-bottom: 40px;
 }
 
 .title-phone-email {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -58,7 +56,7 @@
 
 .phone-email {
   display: block;
-  color: #FFF;
+  color: #fff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -73,7 +71,7 @@
 }
 
 .footer-item {
-  color: #FFF;
+  color: #fff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -86,7 +84,6 @@
 .footer-item:focus {
   cursor: pointer;
 }
-
 
 .footer-list {
   display: flex;
@@ -104,15 +101,14 @@
 .footer-soc-media-item {
   padding: 8px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   fill: #ffffff;
-
 }
 
 .footer-soc-media-item:hover,
 .footer-soc-media-item:focus {
-  fill: #4DC274;
-  border-color: #4DC274;
+  fill: #4dc274;
+  border-color: #4dc274;
 }
 
 .link {
@@ -128,7 +124,7 @@
   bottom: -50%;
   width: 0%;
   height: 2px;
-  background-color: #4DC274;
+  background-color: #4dc274;
   transition: width 0.3s ease;
 }
 
@@ -147,7 +143,7 @@
 }
 
 .footer-copy {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -159,7 +155,7 @@
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -173,16 +169,15 @@
   margin-right: 18px;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {}
+@media (min-width: 320px) and (max-width: 375px) {
+}
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width: 768px) {
   .logo {
     margin-bottom: 32px;
   }
 
-  .container {
-
+  .footer-container {
     padding: 32px 32px 16px;
     margin: 0 auto;
   }
@@ -206,7 +201,6 @@
   }
 
   .footer-copy {
-
     margin-right: 214px;
   }
 
@@ -215,8 +209,8 @@
   }
 }
 
-@media screen and (min-width:1280px) {
-  .container {
+@media screen and (min-width: 1280px) {
+  .footer-container {
     padding: 64px 128px 23px;
   }
 
@@ -234,8 +228,6 @@
   }
 
   .footer-copy {
-
     margin-right: 534px;
   }
-
 }
