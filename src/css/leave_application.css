@@ -1,0 +1,276 @@
+.application-remark-wrapper {
+  display: none;
+}
+.application .section-description {
+  margin-bottom: 20px;
+}
+.application-input-label {
+  display: block;
+  margin-bottom: 18px;
+  position: relative;
+}
+.application-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  padding-left: 18px;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.29;
+  outline: none;
+  transition: border-color var(--anim);
+}
+.application-input-warning-icon {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  fill: var(--invalid);
+  pointer-events: none;
+  transform: translateY(-50%) scale(0);
+  transition: transform var(--anim);
+}
+.application-input:focus {
+  border-color: var(--green);
+}
+
+.application-input:invalid:not(:placeholder-shown):required {
+  border-color: var(--invalid);
+}
+.application-input:invalid:not(:placeholder-shown):required
+  + .application-input-warning-icon {
+  transform: scale(1) translateY(-50%);
+}
+
+.application-input-warning-tooltip {
+  position: absolute;
+  right: 0;
+  bottom: 52px;
+  transform: scale(0);
+  display: block;
+  pointer-events: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--black);
+  background-color: var(--gray);
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  transition: transform var(--anim);
+}
+.application-input-warning-romb {
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  transform: rotate(45deg);
+  width: 14px;
+  height: 14px;
+  right: 22px;
+  background-color: var(--gray);
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+  border-bottom: 1px solid rgba(18, 20, 23, 0.1);
+}
+.application-input:invalid:not(:placeholder-shown):required
+  ~ .application-input-warning-tooltip {
+  transform: scale(1);
+}
+
+.application-textarea-label {
+  margin-bottom: 20px;
+  display: block;
+}
+.application-textarea {
+  width: 100%;
+  height: 104px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  color: var(--black);
+  font-size: 16px;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  transition: border-color var(--anim);
+}
+.application-textarea:focus {
+  border-color: var(--green);
+}
+
+/* ! Checkbox */
+
+.application-teachers-title {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.application-teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.application-teachers-label {
+  position: relative;
+  padding-left: 27px;
+  cursor: pointer;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+}
+.application-teachers-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  border-radius: 50%;
+  transition: border-color var(--anim);
+  background-color: transparent;
+}
+.application-teachers-label::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+  border-radius: 100%;
+  transition: background-color var(--anim);
+}
+
+.application-radio:checked + .application-teachers-label::before {
+  border-color: var(--green);
+}
+.application-radio:checked + .application-teachers-label::after {
+  background-color: var(--green);
+}
+
+.application-btn {
+  width: 100%;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  margin-bottom: 16px;
+  transition: background-color var(--anim);
+}
+.application-btn:is(:hover, :focus) {
+  background-color: var(--darkgreen);
+}
+.application-helper-text {
+  color: var(--text-color-grey);
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+.application-helper-link {
+  display: inline;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: underline;
+  color: inherit;
+}
+
+/* ! Before tablet */
+
+@media screen and (max-width: 767px) {
+  .application-title-underline::after {
+    display: none;
+  }
+}
+
+/* ! Tablet */
+
+@media screen and (min-width: 768px) {
+  .application .section-description {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 586px;
+    margin-bottom: 64px;
+  }
+  .application-form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .application-input {
+    height: 56px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .application-input-warning-tooltip {
+    bottom: 58px;
+  }
+  .application-textarea-label {
+    margin-bottom: 32px;
+  }
+  .application-teachers-list {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .application-teachers-label {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+  }
+  .application-btn {
+    height: 60px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .application-helper-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+/* ! Desktop */
+
+@media screen and (min-width: 1280px) {
+  .application-data {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+  }
+  .application-remark-wrapper {
+    display: block;
+    width: 492px;
+    background-color: var(--green);
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .application-remark-meta {
+    padding: 20px 20px 40px 20px;
+  }
+  .application-remark-value {
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .application-remark-description {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
