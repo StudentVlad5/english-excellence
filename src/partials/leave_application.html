@@ -1,3 +1,154 @@
-<section class="section">
-  <div class="container">Leave an applications</div>
+<section id="contact" class="application section">
+  <div class="container">
+    <h2 class="section-headline">
+      Leave an
+      <span class="header-underline application-title-underline"
+        >application</span
+      >
+    </h2>
+    <p class="section-description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="application-data">
+      <div class="application-remark-wrapper">
+        <img
+          class="application-remark-img"
+          alt="Girl is learning "
+          srcset="
+            ./img/leave_application/application.png    1x,
+            ./img/leave_application/application@2x.png 2x
+          "
+          src="./img/leave_application/application.png"
+        />
+        <div class="application-remark-meta">
+          <p class="application-remark-value">1000</p>
+          <p class="application-remark-description">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <form class="application-form">
+        <label class="application-input-label">
+          <input
+            class="application-input"
+            type="text"
+            placeholder="Name"
+            name="application-name"
+            pattern="^[a-zA-Z]+( [a-zA-Z]+)?$"
+            required
+          />
+          <svg class="application-input-warning-icon" width="24" height="24">
+            <use href="./img/header-icons.svg#warning"></use>
+          </svg>
+          <span class="application-input-warning-tooltip"
+            >For example: Jon Snow or Jon
+            <span class="application-input-warning-romb"></span>
+          </span>
+        </label>
+        <label class="application-input-label">
+          <input
+            class="application-input"
+            type="email"
+            placeholder="Email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            name="application-email"
+            required
+          />
+          <svg class="application-input-warning-icon" width="24" height="24">
+            <use href="./img/header-icons.svg#warning"></use>
+          </svg>
+          <span class="application-input-warning-tooltip"
+            >For example: example@gmail.com
+            <span class="application-input-warning-romb"></span>
+          </span>
+        </label>
+        <label class="application-input-label">
+          <input
+            class="application-input"
+            type="tel"
+            placeholder="Phone"
+            name="application-phone"
+            pattern="^(\+?\d[0-9]{4,11})"
+            required
+          />
+          <svg class="application-input-warning-icon" width="24" height="24">
+            <use href="./img/header-icons.svg#warning"></use>
+          </svg>
+          <span class="application-input-warning-tooltip"
+            >For example: +123456789012 or 12345
+            <span class="application-input-warning-romb"></span>
+          </span>
+        </label>
+        <label class="application-textarea-label">
+          <textarea
+            class="application-textarea"
+            name="application-comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+
+        <!-- Checkboxes -->
+        <h3 class="application-teachers-title">Choose a teacher</h3>
+        <ul class="application-teachers-list">
+          <li class="application-teachers-item">
+            <input
+              class="application-radio visually-hidden"
+              id="maria"
+              type="radio"
+              name="teacher"
+              value="Maria"
+              checked
+            />
+            <label class="application-teachers-label" for="maria">Maria</label>
+          </li>
+          <li class="application-teachers-item">
+            <input
+              class="application-radio visually-hidden"
+              id="artem"
+              type="radio"
+              name="teacher"
+              value="Artem"
+            />
+            <label class="application-teachers-label" for="artem">Artem</label>
+          </li>
+          <li class="application-teachers-item">
+            <input
+              class="application-radio visually-hidden"
+              id="ilona"
+              type="radio"
+              name="teacher"
+              value="Ilona"
+            />
+            <label class="application-teachers-label" for="ilona">Ilona</label>
+          </li>
+          <li class="application-teachers-item">
+            <input
+              class="application-radio visually-hidden"
+              id="volodymyr"
+              type="radio"
+              name="teacher"
+              value="Volodymyr"
+            />
+            <label class="application-teachers-label" for="volodymyr"
+              >Volodymyr</label
+            >
+          </li>
+        </ul>
+        <button class="application-btn" type="submit">Send</button>
+        <p class="application-helper-text">
+          By clicking on “Send” button, you agree to our&nbsp;<button
+            type="button"
+            class="application-helper-link info-open-btn-id"
+          >
+            Privacy Policy</button
+          >,
+          <br />
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
 </section>
