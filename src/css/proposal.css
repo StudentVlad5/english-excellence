@@ -81,7 +81,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--black);
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .proposal-list {
@@ -142,3 +142,81 @@
 .proposal-image {
   display: none;
 }
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .proposal-wrapper {
+    max-width: 704px;
+    padding: 64px 32px;
+    border-radius: 30px;
+  }
+
+  .proposal-header {
+    font-size: 60px;
+    line-height: 1.17;
+    padding-bottom: 84px;
+  }
+
+  .proposal-first-card {
+    padding-top: 65px;
+    padding-bottom: 63px;
+    padding-left: 32px;
+    padding-right: 0px;
+    gap: 32px;
+    border-radius: 30px;
+    max-width: 667px;
+    max-height: 499px;
+  }
+
+  .proposal-card-two {
+    border-radius: 30px;
+    max-width: 667px;
+    max-height: 499px;
+  }
+
+  .proposal-card-three {
+    border-radius: 30px;
+    max-width: 667px;
+    max-height: 499px;
+    transform: rotate(-10deg);
+  }
+
+  .proposal-header-h3 {
+    font-size: 40px;
+  }
+
+  .proposal-list {
+    max-width: 450px;
+  }
+
+  .proposal-list-item {
+    gap: 16px;
+  }
+
+  .proposal-icon-wrapper {
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal-icon {
+    width: 16px;
+    height: 12px;
+    margin: 6px 8px;
+  }
+
+  .proposal-list-item-text {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .proposal-link {
+    border-radius: 12px;
+    padding: 16px 0;
+    min-width: 306px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {}
