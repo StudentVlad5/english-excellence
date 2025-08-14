@@ -4,11 +4,6 @@
   width: 100%;
 }
 
-.header-container {
-  max-width: var(--breakpoint-mobile-max);
-  margin: 0 auto;
-}
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -222,7 +217,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .header {
+  .container.header-container {
     padding-left: 128px;
     padding-right: 128px;
   }
