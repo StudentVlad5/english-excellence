@@ -219,4 +219,41 @@
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+  .proposal-wrapper {
+    max-width: 1152px;
+    padding: 64px 64px 142px 64px;
+  }
+
+  .proposal-header {
+    padding-bottom: 133px;
+    max-width: 776px;
+  }
+
+  .proposal-first-card {
+    padding-top: 65px;
+    padding-left: 64px;
+    padding-bottom: 63px;
+    border-radius: 30px;
+    gap: 40px;
+    max-width: 1024px;
+    max-height: 471px;
+  }
+
+  .proposal-card-two {
+    max-width: 1010px;
+    max-height: 401px;
+    transform: rotate(11deg);
+  }
+
+  .proposal-card-three {
+    max-width: 1049px;
+    max-height: 462px;
+    transform: rotate(-8deg);
+  }
+
+  .proposal-list {
+    max-width: 653px;
+
+  }
+}
