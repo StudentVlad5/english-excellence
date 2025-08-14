@@ -1,0 +1,259 @@
+.proposal-wrapper {
+  max-width: 335px;
+  padding: 40px 20px;
+  border-radius: 16px;
+  background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+}
+
+.proposal-header {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 105%;
+  color: var(--white);
+  padding-bottom: 65px;
+}
+
+.proposal-accent {
+  color: #bee8cc;
+}
+
+.container.proposal-wrapper {
+  overflow: hidden;
+}
+
+.proposal-card-container {
+  position: relative;
+  /* border: 1px solid darkgreen; */
+}
+
+.proposal-first-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+  background: var(--white);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 19px;
+  padding-right: 21px;
+  max-width: 295px;
+  max-height: 408px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.proposal-card-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 295px;
+  max-height: 408px;
+  width: 100%;
+  height: 100%;
+  transform: rotate(11deg);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+
+.proposal-card-three {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 295px;
+  max-height: 408px;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-9deg);
+  background: var(--light-green);
+  border-radius: 16px;
+  z-index: 0;
+  /* border: 1px solid blue; */
+}
+
+.proposal-header-h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  /* padding-bottom: 20px; */
+}
+
+.proposal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.proposal-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.proposal-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--green);
+}
+
+.proposal-icon {
+  height: 8px;
+  width: 10px;
+  margin: 6px 5px;
+  fill: var(--white);
+}
+
+.proposal-list-item-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.proposal-link {
+  background: var(--green);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--white);
+  padding: 14px 0;
+  max-width: 255px;
+  text-align: center;
+  transition: background-color var(--anim);
+}
+
+.proposal-link:hover,
+.proposal-link:focus {
+  background: #38ae5f;
+}
+
+.proposal-image {
+  display: none;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .proposal-wrapper {
+    max-width: 704px;
+    padding: 64px 32px;
+    border-radius: 30px;
+  }
+
+  .proposal-header {
+    font-size: 60px;
+    line-height: 1.17;
+    padding-bottom: 84px;
+  }
+
+  .proposal-first-card {
+    padding-top: 65px;
+    padding-bottom: 63px;
+    padding-left: 32px;
+    padding-right: 0px;
+    gap: 32px;
+    border-radius: 30px;
+    max-width: 667px;
+    max-height: 499px;
+  }
+
+  .proposal-card-two {
+    border-radius: 30px;
+    max-width: 667px;
+    max-height: 499px;
+  }
+
+  .proposal-card-three {
+    border-radius: 30px;
+    max-width: 667px;
+    max-height: 499px;
+    transform: rotate(-10deg);
+  }
+
+  .proposal-header-h3 {
+    font-size: 40px;
+  }
+
+  .proposal-list {
+    max-width: 450px;
+  }
+
+  .proposal-list-item {
+    gap: 16px;
+  }
+
+  .proposal-icon-wrapper {
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal-icon {
+    width: 16px;
+    height: 12px;
+    margin: 6px 8px;
+  }
+
+  .proposal-list-item-text {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .proposal-link {
+    border-radius: 12px;
+    padding: 16px 0;
+    min-width: 306px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .proposal-wrapper {
+    max-width: 1152px;
+    padding: 64px 64px 142px 64px;
+  }
+
+  .proposal-header {
+    padding-bottom: 133px;
+    max-width: 776px;
+  }
+
+  .proposal-first-card {
+    padding-top: 65px;
+    padding-left: 64px;
+    padding-bottom: 63px;
+    border-radius: 30px;
+    gap: 40px;
+    max-width: 1024px;
+    max-height: 471px;
+  }
+
+  .proposal-card-two {
+    max-width: 1010px;
+    max-height: 401px;
+    transform: rotate(11deg);
+  }
+
+  .proposal-card-three {
+    max-width: 1049px;
+    max-height: 462px;
+    transform: rotate(-8deg);
+  }
+
+  .proposal-list {
+    max-width: 653px;
+
+  }
+}
