@@ -1,5 +1,90 @@
 <header class="header">
   <div class="container">
-    <nav class="nav">Header</nav>
+    <nav class="site-nav">
+      <a class="site-nav__logo" href="./index.html">
+        english<span class="accent">excellence</span>.
+      </a>
+      <button id="burger-button" type="button" class="burger-button">
+        <svg class="burger-icon" aria-label="burger menu icon">
+          <use href="./img/header-icons.svg#burger"></use>
+        </svg>
+      </button>
+      <div class="backdrop is-hidden">
+        <div class="side-menu" id="side-menu">
+          <button id="close-button" type="button" class="close-button">
+            <svg class="close-icon" aria-label="close menu icon">
+              <use href="./img/header-icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="site-nav__list">
+            <li>
+              <a class="site-nav-link" href="#about">About us</a>
+            </li>
+            <li>
+              <a class="site-nav-link" href="#lessons">Our lessons</a>
+            </li>
+            <li>
+              <a class="site-nav-link" href="#teachers">Teachers</a>
+            </li>
+            <li>
+              <a class="site-nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li>
+              <a class="site-nav-link" href="#contact">Contact us</a>
+            </li>
+          </ul>
+          <ul class="header_socials__list">
+            <li>
+              <a
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                class="header_socials__link"
+              >
+                <svg
+                  class="header_socials-icon"
+                  aria-label="facebook icon"
+                  width="44"
+                  height="44"
+                >
+                  <use href="./img/header-icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                class="header_socials__link"
+              >
+                <svg
+                  class="header_socials-icon"
+                  aria-label="instagram icon"
+                  width="44"
+                  height="44"
+                >
+                  <use href="./img/header-icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                class="header_socials__link"
+              >
+                <svg
+                  class="header_socials-icon"
+                  aria-label="youtube icon"
+                  width="44"
+                  height="44"
+                >
+                  <use href="./img/header-icons.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
