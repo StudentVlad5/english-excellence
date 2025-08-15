@@ -147,14 +147,25 @@
 @media only screen and (min-width: 768px) {
   .proposal-wrapper {
     max-width: 704px;
-    padding: 64px 32px;
+    padding: 64px 32px 93px;
     border-radius: 30px;
+  }
+
+  .container.proposal-wrapper {
+    overflow: visible;
   }
 
   .proposal-header {
     font-size: 60px;
     line-height: 1.17;
     padding-bottom: 84px;
+  }
+
+  .proposal-card-container {
+    width: 667px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .proposal-first-card {
