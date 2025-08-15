@@ -97,20 +97,13 @@
 }
 
 .proposal-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
-  background-color: var(--green);
 }
 
 .proposal-icon {
-  height: 8px;
-  width: 10px;
-  margin: 6px 5px;
-  fill: var(--white);
+  width: 20px;
+  height: 20px;
 }
 
 .proposal-list-item-text {
@@ -210,9 +203,8 @@
   }
 
   .proposal-icon {
-    width: 16px;
-    height: 12px;
-    margin: 6px 8px;
+    width: 28px;
+    height: 28px;
   }
 
   .proposal-list-item-text {
