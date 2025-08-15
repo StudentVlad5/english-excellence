@@ -57,10 +57,7 @@
 	place-items: center;
 }
 
-.avatar-bg--gray,
-.avatar-bg--pink,
-.avatar-bg--mint,
-.avatar-bg--green { background: none !important; }
+
 
 .teacher-photo {
 	width: 120px;
@@ -121,8 +118,8 @@
 
 @media (min-width: 1280px) {
 	.teachers-list {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 48px 32px;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 48px 24px;
 	}
 	.teacher-card {
 		padding-top: 32px;
