@@ -8,13 +8,6 @@
   background-color: #121417;
 }
 
-.footer-container {
-  width: 100%;
-  max-width: 1280px;
-  padding: 40px 20px 20px;
-}
-
-/* Logo */
 .logo {
   color: #fff;
   font-family: Manrope;
@@ -33,6 +26,15 @@
   font-weight: 700;
   line-height: normal;
 }
+
+
+.footer-container {
+  max-width: 375px;
+  padding: 40px 20px 20px;
+  margin: 0 auto;
+}
+
+
 
 .address {
   margin-bottom: 40px;
@@ -103,6 +105,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+  transition: fill var(--anim), border-color var(--anim);
 }
 
 .footer-soc-media-item:hover,
@@ -169,8 +172,6 @@
   margin-right: 18px;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
-}
 
 @media screen and (min-width: 768px) {
   .logo {
@@ -178,6 +179,7 @@
   }
 
   .footer-container {
+    max-width: 768px;
     padding: 32px 32px 16px;
     margin: 0 auto;
   }
@@ -211,6 +213,7 @@
 
 @media screen and (min-width: 1280px) {
   .footer-container {
+    max-width: 1280px;
     padding: 64px 128px 23px;
   }
 
