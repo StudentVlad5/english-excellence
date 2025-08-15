@@ -229,6 +229,14 @@
   }
 }
 
+.proposal-image {
+  display: block;
+  width: 214px;
+  position: absolute;
+  top: 174px;
+  left: 503px;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .proposal-wrapper {
