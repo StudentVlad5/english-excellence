@@ -2,12 +2,12 @@
     margin-bottom: 24px;
 }
 
-.our-lessons-title .highlight {
+.our-lessons-title .our-lessons-highlight {
     position: relative;
     isolation: isolate;
 }
 
-.our-lessons-title .highlight::after {
+.our-lessons-title .our-lessons-highlight::after {
     content: '';
     position: absolute;
     width: 148px;
