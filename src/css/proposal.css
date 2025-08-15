@@ -97,20 +97,13 @@
 }
 
 .proposal-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
-  background-color: var(--green);
 }
 
 .proposal-icon {
-  height: 8px;
-  width: 10px;
-  margin: 6px 5px;
-  fill: var(--white);
+  width: 20px;
+  height: 20px;
 }
 
 .proposal-list-item-text {
@@ -147,14 +140,25 @@
 @media only screen and (min-width: 768px) {
   .proposal-wrapper {
     max-width: 704px;
-    padding: 64px 32px;
+    padding: 64px 32px 93px;
     border-radius: 30px;
+  }
+
+  .container.proposal-wrapper {
+    overflow: visible;
   }
 
   .proposal-header {
     font-size: 60px;
     line-height: 1.17;
     padding-bottom: 84px;
+  }
+
+  .proposal-card-container {
+    width: 667px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .proposal-first-card {
@@ -199,9 +203,8 @@
   }
 
   .proposal-icon {
-    width: 16px;
-    height: 12px;
-    margin: 6px 8px;
+    width: 28px;
+    height: 28px;
   }
 
   .proposal-list-item-text {
@@ -218,11 +221,23 @@
   }
 }
 
+.proposal-image {
+  display: block;
+  width: 214px;
+  position: absolute;
+  top: 174px;
+  left: 503px;
+}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .proposal-wrapper {
     max-width: 1152px;
     padding: 64px 64px 142px 64px;
+  }
+
+  .proposal-card-container {
+    width: 1024px;
   }
 
   .proposal-header {
@@ -244,6 +259,8 @@
     max-width: 1010px;
     max-height: 401px;
     transform: rotate(11deg);
+    top: 48px;
+    left: 24px;
   }
 
   .proposal-card-three {
@@ -254,6 +271,10 @@
 
   .proposal-list {
     max-width: 653px;
+  }
 
+  .proposal-image {
+    top: 129px;
+    left: 810px;
   }
 }
