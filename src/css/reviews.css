@@ -1,5 +1,14 @@
-.reviews-container.container {
-  padding: 0;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.reviews-container {
+  max-width: 335px;
+  margin: 0 auto;
+
 }
 
 .title-reviews {
@@ -23,7 +32,7 @@
   margin-bottom: 40px;
 }
 
-.card-item {
+.card-list {
   border-radius: 16px;
   background: var(--gray);
   padding: 20px 20px 40px;
@@ -80,7 +89,26 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+.highlight {
+  position: relative;
+  z-index: 0
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 20px;
+  background-color: #BEE8CC;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+
+@media screen and (min-width:768px) {
+
   .first-card {
     display: block;
   }
@@ -99,16 +127,19 @@
     margin-bottom: 64px;
   }
 
-  .card-list {
+  .card-items {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
   }
 
-  .card-item {
+  .card-list {
     max-width: 336px;
     padding: 32px 16px 40px;
+    flex: 0 0 336px;
   }
+
+
 
   .card-description {
     max-width: 272px;
@@ -140,7 +171,9 @@
     margin-bottom: 64px;
   }
 
-  .card-item {
-    min-width: 320px;
+  .card-list {
+
+    flex: 0 0 320px;
   }
 }
+
