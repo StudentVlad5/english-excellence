@@ -5,11 +5,11 @@
 ## Посилання
 
 - **GitHub репозиторій:**
-  [project-group-mds-5](https://github.com/StudentVlad5/project-group-mds-5)
+  [english-excellence](https://github.com/StudentVlad5/english-excellence)
 - **Проект (Kanban):**
   [Project Board](https://github.com/users/StudentVlad5/projects/11/views/1)
 - **Жива сторінка:**
-  [Live Demo](https://studentvlad5.github.io/project-group-mds-5/)
+  [Live Demo](https://studentvlad5.github.io/english-excellence/)
 
 ## Учасники команди (7)
 
