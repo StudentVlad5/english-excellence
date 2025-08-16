@@ -25,7 +25,6 @@
 ## Завдання
 
 [Макет](https://www.figma.com/file/MrdZUmIfeT1bKd8u5GWLRt/English-Excellence-2.0?type=design&node-id=0%3A1&mode=design&t=ABsxLoZAXhbRJT6P-1)
-ТЗ
 [ТЗ](https://docs.google.com/spreadsheets/d/1JRDqMMRgQ6RbukIpl-18NuXQFMjm8HqGAQwZ553ykHU/edit#gid=0)
 [Презентацiя](https://docs.google.com/presentation/d/1Os-inDRvhyZPdDR6bvJT6CjLYk9wUNn_/edit#slide=id.p1)
 
@@ -54,14 +53,14 @@
 2. Використано normalize та "анульування" css-правил та шаблонізація загальних
    компонентів (контейнер, кнопки).
 
-3. Стркутура папок сфоромована по використанню файлів:
+3. Структура папок сфоромована по використанню файлів:
 
-- - папка "partials" - html;
-- - папка "css" - css;
-- - папка "js" - js;
-- - папка "img" - іконки, картинки.
+- папка "partials" - html;
+- папка "css" - css;
+- папка "js" - js;
+- папка "img" - іконки, картинки.
 
-4. файл base.css утримує всі загальні залежності по дизайну:
+4. Файл base.css утримує всі загальні залежності по дизайну:
 
 - Значення кольорів,
 - Значення Breakpoints,
