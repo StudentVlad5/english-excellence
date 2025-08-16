@@ -1,10 +1,9 @@
 <section id="contact" class="application section">
-  <div class="container">
+  <div class="container application-container">
     <h2 class="section-headline">
       Leave an
-      <span class="header-underline application-title-underline"
-        >application</span
-      >
+      <!-- <span class="header-underline application-title-underline" -->
+      <span class="highlight">application</span>
     </h2>
     <p class="section-description">
       Please use the form below to contact us. Enter your name, email, and
@@ -12,15 +11,28 @@
     </p>
     <div class="application-data">
       <div class="application-remark-wrapper">
-        <img
-          class="application-remark-img"
-          alt="Girl is learning "
-          srcset="
-            ./img/leave_application/application.png    1x,
-            ./img/leave_application/application@2x.png 2x
-          "
-          src="./img/leave_application/application.png"
-        />
+        <picture class="application-remark-img">
+          <source
+            srcset="
+              /img/leave_application/application.avif     1x,
+              ./img/leave_application/application@2x.avif 2x
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              /img/leave_application/application.png     1x,
+              ./img/leave_application/application@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="application-remark-img"
+            alt="Student studying online"
+            src="/img/leave_application/application.png "
+            loading="lazy"
+          />
+        </picture>
         <div class="application-remark-meta">
           <p class="application-remark-value">1000</p>
           <p class="application-remark-description">
@@ -37,11 +49,11 @@
             type="text"
             placeholder="Name"
             name="application-name"
-            pattern="^[a-zA-Z]+( [a-zA-Z]+)?$"
+            pattern="^[a-zA-ZÀ-ž]+(?:[ '-][a-zA-ZÀ-ž]+)*$"
             required
           />
           <svg class="application-input-warning-icon" width="24" height="24">
-            <use href="./img/header-icons.svg#warning"></use>
+            <use href="./img/icons/header-icons.svg#warning"></use>
           </svg>
           <span class="application-input-warning-tooltip"
             >For example: Jon Snow or Jon
@@ -58,7 +70,7 @@
             required
           />
           <svg class="application-input-warning-icon" width="24" height="24">
-            <use href="./img/header-icons.svg#warning"></use>
+            <use href="./img/icons/header-icons.svg#warning"></use>
           </svg>
           <span class="application-input-warning-tooltip"
             >For example: example@gmail.com
@@ -71,11 +83,11 @@
             type="tel"
             placeholder="Phone"
             name="application-phone"
-            pattern="^(\+?\d[0-9]{4,11})"
+            pattern="^\+?[0-9\s\-]{5,15}$"
             required
           />
           <svg class="application-input-warning-icon" width="24" height="24">
-            <use href="./img/header-icons.svg#warning"></use>
+            <use href="./img/icons/header-icons.svg#warning"></use>
           </svg>
           <span class="application-input-warning-tooltip"
             >For example: +123456789012 or 12345

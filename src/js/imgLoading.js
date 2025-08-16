@@ -1,6 +1,6 @@
-import heroMobile from '../img/jpg/hero/hero_2.jpg';
-import heroTablet from '../img/jpg/hero/hero_tablet_2.jpg';
-import heroDesktop from '../img/jpg/hero/hero_desktop_2.jpg';
+import heroMobile from '../img/hero/hero_2.jpg';
+import heroTablet from '../img/hero/hero_tablet_2.jpg';
+import heroDesktop from '../img/hero/hero_desktop_2.jpg';
 
 document.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const img = new Image();
   let bgUrl;
 
-  if (window.innerWidth >= 1024) {
+  if (window.innerWidth >= 1280) {
     bgUrl = heroDesktop;
   } else if (window.innerWidth >= 768) {
     bgUrl = heroTablet;
