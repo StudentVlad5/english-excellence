@@ -1,6 +1,6 @@
 .hero {
   /* блюр фон (маленька картинка, розмита) */
-  background-image: url('../img/avif/hero/hero_2.avif');
+  background-image: url('/img/hero/hero_2.avif');
   background-size: cover;
   background-position: center;
   filter: blur(10px);
@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-radius: 16px;
 }
 
 /* великий фон, який накладається поверх */
@@ -29,9 +30,29 @@
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
 }
-.hero-container.container {
-  padding-top: 0;
-  padding-bottom: 0;
+
+.section.hero-section {
+  padding-bottom: 96px;
+}
+@media (min-width: 768px) {
+  .hero-container.container .hero {
+    height: 857px;
+    border-radius: 30px;
+  }
+  .hero::after {
+    border-radius: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-container.container .hero {
+    height: 629px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-container.container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .hero.loaded::after {
@@ -82,7 +103,7 @@
 /* медіа для планшета */
 @media (min-width: 768px) {
   .hero {
-    background-image: url('../img/avif/hero/hero_tablet_2.avif');
+    background-image: url('/img/hero/hero_tablet_2.avif');
     align-items: start;
     justify-content: flex-start;
   }
@@ -104,9 +125,9 @@
 }
 
 /* медіа для десктопа */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .hero {
-    background-image: url('../img/avif/hero/hero_desktop_2.avif');
+    background-image: url('/img/hero/hero_desktop_2.avif');
   }
   .hero::after {
     background-image: var(--main-bg);
