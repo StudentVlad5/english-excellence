@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .reviews-container {
   max-width: 335px;
   margin: 0 auto;
@@ -28,7 +34,7 @@
   margin-bottom: 40px;
 }
 
-.card {
+.card-list {
   border-radius: 16px;
   background: #F3F5F6;
   padding: 20px 20px 40px;
@@ -111,6 +117,9 @@
 
 
 @media screen and (min-width:768px) {
+
+
+
   .first-card {
     display: block;
   }
@@ -130,17 +139,20 @@
     margin-right: auto;
   }
 
-  .card-item {
+  .card-items {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
 
   }
 
-  .card {
+  .card-list {
     max-width: 336px;
     padding: 32px 16px 40px;
+    flex: 0 0 336px;
   }
+
+
 
   .card-description {
     max-width: 272px;
@@ -169,4 +181,8 @@
     margin-bottom: 64px;
   }
 
+  .card-list {
+
+    flex: 0 0 320px;
+  }
 }
