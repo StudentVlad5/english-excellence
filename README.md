@@ -47,7 +47,7 @@
 - fi-rr-angle-small-left
 - Nav
 - Nav_small
-- x
+- x (close)
 - youtube
 
 2. Використано normalize та "анульування" css-правил та шаблонізація загальних
