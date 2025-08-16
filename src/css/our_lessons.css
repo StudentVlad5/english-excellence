@@ -1,137 +1,147 @@
 .our-lessons-title {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
-
-.our-lessons-title .our-lessons-highlight {
-    position: relative;
-    isolation: isolate;
-}
-
-.our-lessons-title .our-lessons-highlight::after {
-    content: '';
-    position: absolute;
-    width: 148px;
-    height: 18px;
-    background-color: #BEE8CC;
-    border-radius: 8px;
-    left: 50%;
-    bottom: 2px;
-    transform: translateX(-50%);
-    z-index: -1;
+@media screen and (min-width: 768px) {
+  .our-lessons-title {
+    margin-bottom: 16px;
+  }
 }
 
 .our-lessons-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .our-lessons-item {
-    background-color: var(--white);
-    border: 1px solid var(--green);
-    border-radius: 30px;
-    padding: 40px 20px;
-    width: 100%;
-    max-width: 335px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    transition: transform var(--anim), box-shadow var(--anim);
+  background-color: var(--white);
+  border: 1px solid var(--green);
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  transition: transform var(--anim), box-shadow var(--anim);
 }
 
 .our-lessons-item.standard {
-    background: var(--green);
-    border: 1px solid var(--green);
+  background: var(--green);
+  border: 1px solid var(--green);
 }
 
 .our-lessons-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(18, 20, 23, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(18, 20, 23, 0.1);
 }
 
 .lesson-plan-title {
-    font-family: 'Manrope', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--black);
-    margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin: 0 0 8px 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .lesson-plan-title {
+    margin-bottom: 16px;
+  }
 }
 
 .our-lessons-item.standard .lesson-plan-title {
-    color: var(--white);
+  color: var(--white);
 }
 
 .lesson-plan-price {
-    font-family: 'Manrope', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.375;
-    color: var(--black);
-    margin: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.375;
+  color: var(--black);
+  margin: 0 0 20px 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .lesson-plan-price {
+    margin-bottom: 16px;
+  }
 }
 
 .our-lessons-item.standard .lesson-plan-price {
-    color: var(--white);
+  color: var(--white);
 }
 
 .lesson-plan-description {
-    font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--text-color-grey);
-    margin: 0 0 32px 0;
-    flex-grow: 1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color-grey);
+  margin: 0 0 32px 0;
+  flex-grow: 1;
 }
 
 .our-lessons-item.standard .lesson-plan-description {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .lesson-plan-button {
-    display: inline-block;
-    background-color: var(--green);
-    color: var(--white);
-    text-decoration: none;
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.56;
-    padding: 16px 39px;
-    border-radius: 12px;
-    transition: background-color var(--anim), transform var(--anim);
-    margin-top: auto;
-    border: 1px solid transparent;
+  display: inline-block;
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.56;
+  padding: 16px 0;
+  border-radius: 12px;
+  transition: background-color var(--anim), transform var(--anim);
+  margin-top: auto;
+  border: 1px solid transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  .lesson-plan-button {
+    min-width: 256px;
+  }
 }
 
 .our-lessons-item.standard .lesson-plan-button {
-    border: 1px solid var(--white);
+  border: 1px solid var(--white);
 }
 
 .lesson-plan-button:hover {
-    background-color: var(--darkgreen);
-    transform: translateY(-2px);
+  background-color: var(--darkgreen);
+  transform: translateY(-2px);
 }
 
 @media screen and (min-width: 768px) {
-    .our-lessons-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 336px);
-        gap: 24px;
-        justify-content: center;
-        align-items: start;
-    }
+  .our-lessons-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 336px);
+    gap: 32px;
+    justify-content: center;
+    align-items: start;
+  }
 
-    .our-lessons-item {
-        width: 336px;
-        height: 404px;
-        max-width: none;
-    }
+  .our-lessons-item {
+    max-width: 336px;
+    min-height: 404px;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .our-lessons-list {
+    grid-template-columns: repeat(auto-fit, 320px);
+  }
+  .our-lessons-item {
+    max-width: 320px;
+    padding: 32px;
+  }
 }

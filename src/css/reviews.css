@@ -1,48 +1,41 @@
-.reviews-container {
-  max-width: 335px;
-  margin: 0 auto;
+.reviews-container.container {
+  padding: 0;
 }
 
 .title-reviews {
-  color: #121417;
+  color: var(--black);
   text-align: center;
-  font-family: Manrope;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px;
-  /* 112.5% */
+  line-height: 1.12;
   letter-spacing: -0.64px;
   margin-bottom: 16px;
 }
 
 .description {
-  color: rgba(18, 20, 23, 0.50);
+  color: var(--text-color-grey);
   text-align: center;
-  font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  /* 171.429% */
+  line-height: 1.71;
   margin-bottom: 40px;
 }
 
-.card {
+.card-item {
   border-radius: 16px;
-  background: #F3F5F6;
+  background: var(--gray);
   padding: 20px 20px 40px;
 }
 
 .card-description {
   max-width: 267px;
-  color: rgba(18, 20, 23, 0.50);
-  font-family: Manrope;
+  color: var(--text-color-grey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  /* 150% */
+  line-height: 1.5;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +43,7 @@
 
 .card-container {
   border-radius: 15px;
-  background: #4DC274;
+  background: var(--green);
   display: flex;
   gap: 8px;
   padding: 14px;
@@ -59,29 +52,24 @@
 
 .img {
   border-radius: 50px;
-  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
 .card-name {
-  color: #FFF;
-  font-family: Manrope;
+  color: var(--white);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px;
-  /* 120% */
+  line-height: 1.2;
   letter-spacing: -0.4px;
   margin-bottom: 2px;
 }
 
 .card-status {
-  color: rgba(255, 255, 255, 0.50);
-  font-family: Manrope;
+  color: var(--text-color-grey);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
-  /* 133.333% */
+  line-height: 1.33;
 }
 
 .first-card {
@@ -92,25 +80,7 @@
   display: none;
 }
 
-.highlight {
-  position: relative;
-  z-index: 0
-}
-
-.highlight::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 100%;
-  height: 20px;
-  background-color: #BEE8CC;
-  border-radius: 8px;
-  z-index: -1;
-}
-
-
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .first-card {
     display: block;
   }
@@ -118,26 +88,24 @@
   .reviews-container {
     max-width: 704px;
     margin: 0 auto;
-
   }
 
   .description {
     max-width: 647px;
     font-size: 18px;
-    line-height: 30px;
-    /* 166.667% */
+    line-height: 1.66;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 64px;
   }
 
-  .card-item {
+  .card-list {
     display: flex;
     justify-content: center;
     gap: 32px;
-
   }
 
-  .card {
+  .card-item {
     max-width: 336px;
     padding: 32px 16px 40px;
   }
@@ -145,16 +113,20 @@
   .card-description {
     max-width: 272px;
     font-size: 16px;
-
   }
 
   .card-container {
     max-width: 304px;
     margin-bottom: 32px;
   }
+  .title-reviews {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 1280px) {
   .second-card {
     display: block;
   }
@@ -162,11 +134,13 @@
   .reviews-container {
     max-width: 1024px;
     margin: 0 auto;
-
   }
 
   .description {
     margin-bottom: 64px;
   }
 
+  .card-item {
+    min-width: 320px;
+  }
 }
