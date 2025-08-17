@@ -10,7 +10,7 @@
   align-items: center;
   flex-direction: column;
   border-radius: 16px;
-  height: 709px;
+  min-height: 709px;
 }
 
 /* великий фон, який накладається поверх */
@@ -37,7 +37,7 @@
 }
 @media (min-width: 768px) {
   .hero-container.container .hero {
-    height: 857px;
+    min-height: 857px;
     border-radius: 30px;
   }
   .hero::after {
@@ -46,7 +46,7 @@
 }
 @media (min-width: 1280px) {
   .hero-container.container .hero {
-    height: 629px;
+    min-height: 629px;
   }
 }
 @media (min-width: 1280px) {
