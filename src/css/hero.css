@@ -146,3 +146,26 @@
     width: 100%;
   }
 }
+
+/* retina для mobile */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero::after {
+    background-image: var(--main-bg-2x, var(--main-bg));
+  }
+}
+
+/* retina для tablet */
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero::after {
+    background-image: var(--main-bg-2x, var(--main-bg));
+  }
+}
+
+/* retina для desktop */
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1280px) and (min-resolution: 192dpi) {
+  .hero::after {
+    background-image: var(--main-bg-2x, var(--main-bg));
+  }
+}
