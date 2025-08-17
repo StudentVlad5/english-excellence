@@ -35,20 +35,24 @@
 .section.hero-section {
   padding-bottom: 96px;
 }
+
 @media (min-width: 768px) {
   .hero-container.container .hero {
     min-height: 857px;
     border-radius: 30px;
   }
+
   .hero::after {
     border-radius: 30px;
   }
 }
+
 @media (min-width: 1280px) {
   .hero-container.container .hero {
     min-height: 629px;
   }
 }
+
 @media (min-width: 1280px) {
   .hero-container.container {
     padding-top: 0;
@@ -60,8 +64,10 @@
   opacity: 1;
   filter: none;
 }
+
 .hero.loaded {
-  filter: none; /* прибираємо блюр базового фону */
+  filter: none;
+  /* прибираємо блюр базового фону */
 }
 
 .hero_title {
@@ -73,6 +79,7 @@
   max-width: 295px;
   z-index: 3;
 }
+
 .hero_title_style {
   color: var(--light-green);
 }
@@ -84,6 +91,7 @@
   border: transparent 1px solid;
   width: 100%;
 }
+
 .hero-button::first-letter {
   text-transform: uppercase;
 }
@@ -96,9 +104,33 @@
   align-self: flex-end;
   margin-top: auto;
 }
+
 .icon.icon-to-footer svg {
   width: 20px;
   height: 20px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: background-color var(--trans-norm);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.scroll-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--green);
+  transition: fill var(--trans-norm);
 }
 
 /* медіа для планшета */
@@ -108,9 +140,11 @@
     align-items: start;
     justify-content: flex-start;
   }
+
   .hero::after {
     background-image: var(--main-bg);
   }
+
   .hero_title {
     padding-top: 260px;
     padding-left: 32px;
@@ -118,10 +152,23 @@
     font-weight: 700;
     max-width: 488px;
   }
+
   .hero-button {
     margin-top: 32px;
     margin-left: 32px;
     width: 100%;
+  }
+
+  .scroll-down {
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .scroll-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -130,25 +177,34 @@
   .hero {
     background-image: url('/img/hero/hero_desktop_2.avif');
   }
+
   .hero::after {
     background-image: var(--main-bg);
   }
+
   .hero_title {
     line-height: 117%;
     padding-top: 164px;
     padding-left: 64px;
     max-width: 564px;
   }
+
   .hero-button {
     line-height: 156%;
     margin-top: 32px;
     margin-left: 64px;
     width: 100%;
   }
+
+  .scroll-down {
+    bottom: 40px;
+    right: 64px;
+  }
 }
 
 /* retina для mobile */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .hero::after {
     background-image: var(--main-bg-2x, var(--main-bg));
   }
@@ -156,7 +212,7 @@
 
 /* retina для tablet */
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-  (min-width: 768px) and (min-resolution: 192dpi) {
+(min-width: 768px) and (min-resolution: 192dpi) {
   .hero::after {
     background-image: var(--main-bg-2x, var(--main-bg));
   }
@@ -164,7 +220,7 @@
 
 /* retina для desktop */
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-  (min-width: 1280px) and (min-resolution: 192dpi) {
+(min-width: 1280px) and (min-resolution: 192dpi) {
   .hero::after {
     background-image: var(--main-bg-2x, var(--main-bg));
   }
