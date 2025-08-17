@@ -25,7 +25,9 @@
 ## Завдання
 
 [Макет](https://www.figma.com/file/MrdZUmIfeT1bKd8u5GWLRt/English-Excellence-2.0?type=design&node-id=0%3A1&mode=design&t=ABsxLoZAXhbRJT6P-1)
+
 [ТЗ](https://docs.google.com/spreadsheets/d/1JRDqMMRgQ6RbukIpl-18NuXQFMjm8HqGAQwZ553ykHU/edit#gid=0)
+
 [Презентацiя](https://docs.google.com/presentation/d/1Os-inDRvhyZPdDR6bvJT6CjLYk9wUNn_/edit#slide=id.p1)
 
 ## Технології
@@ -37,6 +39,34 @@
 - GitHab;
 - Google Meet;
 - Figma;
+
+## Встановлення
+
+# Clone repository
+
+```bash
+git clone
+https://github.com/StudentVlad5/english-excellence
+
+```
+
+# Install dependencies
+
+```bash
+npm install
+```
+
+# Run development server
+
+```bash
+npm run dev
+```
+
+# Build for production
+
+```bash
+npm run build
+```
 
 ## Загальний manual проекту:
 
@@ -55,10 +85,20 @@
 
 3. Структура папок сфоромована по використанню файлів:
 
-- папка "partials" - html;
-- папка "css" - css;
-- папка "js" - js;
-- папка "img" - іконки, картинки.
+```bush
+.
+├── src/            # Contains all source files for the project.
+│   ├── css/        # Stores modular CSS files for different components and sections.
+│   ├── img/        # Contains all image assets, including JPG, PNG, and SVG sprites.
+│   ├── partials/   # Holds reusable HTML components, such as headers, footers, and sections.
+│   ├── public/     # Contains static assets, like favicons, that are not processed by the build tool.
+│   └── index.html  # The main entry point of the application.
+├── .editorconfig   # Configuration file for consistent coding styles across different editors.
+├── vite.config.js  # Configuration file for Vite build tool.
+├── .gitignore      # Specifies files and directories to ignore in version control.
+├── package.json    # Lists project dependencies and scripts.
+└── README.md       # Project overview and documentation.
+```
 
 4. Файл base.css утримує всі загальні залежності по дизайну:
 
