@@ -8,17 +8,20 @@ const sideMenu = document.getElementById('side-menu');
 burgerButton.addEventListener('click', () => {
   backdrop.classList.remove('is-hidden');
   sideMenu.classList.remove('is-hidden');
+  document.body.style.overflow = 'hidden'; // Заборонити скроллінг
 });
 
 closeButton.addEventListener('click', () => {
   backdrop.classList.add('is-hidden');
   sideMenu.classList.add('is-hidden');
+  document.body.style.overflow = 'auto'; // Повернути скроллінг
 });
 
 backdrop.addEventListener('click', event => {
   if (event.target === event.currentTarget) {
     backdrop.classList.add('is-hidden');
     sideMenu.classList.add('is-hidden');
+    document.body.style.overflow = 'auto'; // Повернути скроллінг
   }
 });
 
