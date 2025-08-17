@@ -25,15 +25,17 @@ backdrop.addEventListener('click', event => {
   }
 });
 
-document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+document.querySelectorAll('.site-nav-link').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
     const target = document.querySelector(this.getAttribute('href'));
+
     if (target) {
       target.scrollIntoView({
         behavior: 'smooth',
       });
+      document.body.style.overflow = 'auto'; // Повернути скроллінг
     }
   });
 });
