@@ -72,7 +72,8 @@
 }
 
 .card-status {
-  color: var(--text-color-grey);
+  color: var(--white);
+  opacity: 0.5;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
