@@ -70,7 +70,7 @@
   line-height: 0;
   border-radius: 50%;
   transition: background-color var(--anim);
-  padding: 4px;
+  /* padding: 4px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@
   stroke: var(--white);
   width: 32px;
   height: 32px;
-  transform: translate(-4px, -4px);
+  /* transform: translate(-4px, -4px); */
   transition: stroke var(--anim);
 }
 
@@ -129,7 +129,7 @@
   margin-top: auto;
 }
 
-.site-nav__list > li:not(:last-child) {
+.site-nav__list>li:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -256,7 +256,7 @@
     margin-left: auto;
   }
 
-  .site-nav__list > li:not(:last-child) {
+  .site-nav__list>li:not(:last-child) {
     margin-bottom: 0;
     margin-right: 20px;
   }
