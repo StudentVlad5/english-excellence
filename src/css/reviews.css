@@ -145,6 +145,7 @@
     max-width: 304px;
     margin-bottom: 32px;
   }
+
   .title-reviews {
     font-size: 40px;
     line-height: 1.2;
@@ -164,6 +165,10 @@
 
   .description {
     margin-bottom: 64px;
+  }
+
+  .card-items {
+    justify-content: center;
   }
 
   .card-list {
