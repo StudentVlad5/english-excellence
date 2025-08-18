@@ -1,9 +1,9 @@
-import heroMobile from '../img/hero/hero_2.jpg';
-import heroTablet from '../img/hero/hero_tablet_2.jpg';
-import heroDesktop from '../img/hero/hero_desktop_2.jpg';
-import heroMobile2x from '../img/hero/hero_2@2x.jpg';
-import heroTablet2x from '../img/hero/hero_tablet_2@2x.jpg';
-import heroDesktop2x from '../img/hero/hero_desktop_2@2x.jpg';
+import heroMobile from '../img/hero/hero_2.webp';
+import heroTablet from '../img/hero/hero_tablet_2.webp';
+import heroDesktop from '../img/hero/hero_desktop_2.webp';
+import heroMobile2x from '../img/hero/hero_2@2x.webp';
+import heroTablet2x from '../img/hero/hero_tablet_2@2x.webp';
+import heroDesktop2x from '../img/hero/hero_desktop_2@2x.webp';
 
 document.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero');
